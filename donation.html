@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<h1><a href="hospital.html" style="color: crimson;">SAGAR HOSPITAL</a></h1>
+    <nav>
+        <a href="Treatments.html" name="Treatments">Treatments</a>
+        <a href='Academics.html' name="Academics">Acamedics</a>
+        <a href='International patients.html' name="International patients">International patients &nbsp;</a>
+        <a href='Quick inquiry.html' name="Quick inquiry">Quick inquiry</a>
+        <a href='Sign up.html' name="sign up">Sign up for free</a>
+    </nav>
+<body>
+    <section class="container">
+        
+        <form action="">
+            <h2 class="heading">PAYMENT FORM</h2>
+            <h3>User Information</h3>
+            <p>required field are *</p>
+            <p>Name*: <input type="text" name ="name" required placeholder="SAGAR"></p>
+            <fieldset>
+                <legend>Gender* </legend>
+                <p>
+                    Male <input type="radio" name="gender" id="male"required>Female <input type="radio" name="gender" id="female">Others <input type="radio" name="gender" id="others" required>
+                </p>
+            </fieldset>
+            <p>Phone no:* <input type="number" Phone no.="Phone no." required placeholder="1234567890"></p>
+            <p>Email:* &nbsp;&nbsp;&nbsp;&nbsp;:  <input type="email" Email="email" required placeholder="sagar@gmail.com"></p>
+            <p>Pincode&nbsp;&nbsp;:* <input type="number" Pimcode="Pincode" placeholder="123456"></p>
+            <fieldset>
+                <legend>Address*</legend>
+                <textarea type="address" placeholder="Enter your Address" name="Address" id="Address" cols="70px" rows="3"></textarea>
+            </fieldset>
+            
+            <h2>PAYMENT PROCEDURE</h2>
+            <p>
+                Card type:*
+                <select name="card type" id ="card_type" required>
+                    <option value=""--SELECT A CARD TYPE-->--select--</option>
+                    <option value="Visa">Visa</option>
+                    <option value="rupay">rupay</option>
+                    <option value="master card">master card</option>
+                    <option value="others">others</option>
+                </select>
+            </p>
+            <p>
+                 Card number:*<input type="number" name="card number" id="card_number" required placeholder="1111-2222-3333-4444">
+            </p>
+            <p>
+                Card holder name:*<input type="text" name="Card_holder_name" id="Card_holder_name" required>
+            </p>
+            <p>CVV :*<input type="password" name="cvv" id="cvv" required placeholder="123"></p>
+            <p>Expiry date:*<input type="date" name="Expiry_date" id="Expiry_date" required></p>
+            <input type="submit" value="PAY NOW"></input>
+            <br>
+        </form>
+    </section>
+</body>
+<footer>
+    <a href="#">FAQ</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Terms of use</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Refund Policy</a>
+    <a href="#">&copy;</a>
+</footer>
+</html>
