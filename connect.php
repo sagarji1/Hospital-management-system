@@ -1,11 +1,9 @@
-
-
 <?php
-// Database connection
+// Database credentials
 $servername = "localhost";
-$username = "username"; // Your MySQL username
-$password = "password"; // Your MySQL password
-$dbname = "mydatabase"; // Your MySQL database name
+$username = "root";
+$password = " ";
+$dbname = "Appointment";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -15,22 +13,21 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Retrieve form data
+// Prepare and bind the SQL statement
+$stmt = $conn->prepare("INSERT INTO app1 (name, age, gender, phone, email, about) VALUES (?, ?, ?, ?, ?, ?)");
+$stmt->bind_param("sissss", $name, $age, $gender, $phone, $email, $about);
+
+// Set parameters and execute
 $name = $_POST['name'];
+$age = $_POST['age'];
+$gender = $_POST['gender'];
+$phone = $_POST['phone'];
 $email = $_POST['email'];
-$Pincode=$_POST['Pincode'];
-$Phone=$_POST['Phone'];
-$About=$_POST['About'];
-$gender=$_POST['gender'];
+$about = $_POST['about'];
+$stmt->execute();
 
-// SQL to insert data into table
-$sql = "INSERT INTO appointment (name,email,Pincode,Phone,About,gender) VALUES ('$name', '$email','$Pincode','$Phone','$About','$gender')";
+echo "New record inserted successfully";
 
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
+$stmt->close();
 $conn->close();
 ?>
