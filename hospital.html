@@ -18,7 +18,7 @@
         <div class="nav2">
             <a href="tel:(+91)9717065849" style="color: crimson;">EMERGENCY</a>
             <a href="">
-                <details>
+                <details class="Work">
                     <summary>Work Hour</summary>
                     <p>9:00-20:00 Everyday</p>
                 </details>
@@ -46,14 +46,14 @@
         <br>
         <h2>About Our Doctors</h2>
         <div class="div1">
-            <a href="#" name="Cardiologists" id="doctors">Cardiologists</a>
-            <a href="#" name="Orthopedic" id="doctors">Orthopedic</a>
-            <a href="#" name="Neurologists" id="doctors">Neurologists</a>
+            <a href="Cardiologists.html" name="Cardiologists" id="doctors">Cardiologists</a>
+            <a href="Orthopedic.html" name="Orthopedic" id="doctors">Orthopedic</a>
+            <a href="Neurologists.html" name="Neurologists" id="doctors">Neurologists</a>
         </div>
         <div class="div2">
-            <a href="#" name="Gastroenterologists" id="doctors">Gastroenterologists</a>
-            <a href="#" name="Endocrinologists" id="doctors">Endocrinologists</a>
-            <a href="#" name="Nephrologists" id="doctors">Nephrologists</a>
+            <a href="Gastroenterologists.html" name="Gastroenterologists" id="doctors">Gastroenterologists</a>
+            <a href="Endocrinologists.html" name="Endocrinologists" id="doctors">Endocrinologists</a>
+            <a href="Nephrologists.html" name="Nephrologists" id="doctors">Nephrologists</a>
         </div>
         <br>
         
@@ -95,21 +95,26 @@
                             <th colspan="2"><h2>Book an Appointment</h2></th>
                         </tr>
                         <tr>
-                            <td><p>Name*: <input type="text" name ="name" required placeholder="SAGAR"></p></td>
-                            <td>Email:* &nbsp;&nbsp;&nbsp;&nbsp;:  <input type="email" name="email" Email="email" required placeholder="sagar@gmail.com"></td>
+                            <td><label for="name">Name:</label><input type="text" id="name" name="name" required></td>
+                            <td><label for="age">Age:</label><input type="number" id="age" name="age" required></td>
                         </tr>
                         <tr>
-                            <td><p>Pincode&nbsp;&nbsp;:* <input type="number" name="Pincode" placeholder="123456"></p></td>
-                            <td><p>Phone&nbsp;&nbsp;:* <input type="number" name="Phone" placeholder="9999999999"></p></td>
+                            <td><label for="phone">Phone:</label><input type="tel" id="phone" name="phone" required></td>
+                            <td><label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required></td>
                         </tr>
                         <tr>
                             
-                            <td colspan="2"><p>Gender:* <br>
-                                Male <input type="radio" name="gender" id="male"required value="m">Female <input type="radio" name="gender" id="female" value="f">Others <input type="radio" name="gender" id="others" required value="o">
-                            </p></td>
+                            <td colspan="2"><label for="gender">Gender:</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="m">Male</option>
+                                    <option value="f">Female</option>
+                                    <option value="other">others</option>
+                                </select></td>
                         </tr>
                         <tr>
-                            <td colspan="2">About*: <input type="text" name ="About" required placeholder="diseases" rows="2" cols="70px" ></p></td>
+                            <td colspan="2"><label for="about">About:</label>
+                                <textarea id="about" name="about" required></textarea></td>
                         </tr>
                         <tr>
                             <td colspan="2"><input type="submit" value="SUBMIT"></input></td>
@@ -126,6 +131,7 @@
         <a href="#">Terms of use</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Refund Policy</a>
+        <a href="about_us.html">About us</a>
         <a href="#">&copy;</a>
     </footer>
     
