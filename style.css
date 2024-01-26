@@ -209,3 +209,6 @@ grid-template-columns: auto auto auto;
     th {
         background-color: #f2f2f2;
     }
+    .Work{
+        width: 90px;
+    }
