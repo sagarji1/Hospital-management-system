@@ -1,0 +1,134 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav a{
+    text-decoration: none;
+    list-style-position: inside;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding:20px;
+    float: left;
+}
+.navigation{
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    background-size: 100%;
+    height: 100px;
+}
+.nav2{
+    background-color:rgb(99, 157, 224) ;
+    overflow: hidden;
+    position: sticky;
+    top:0px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    background-size: cover;
+    padding-right: 785px;
+}
+nav{
+    position: sticky;
+}
+#hospital{
+    border: 3px solid black;
+    top: 0px;
+    left:5px;
+    overflow: visible;
+    margin: -20px;
+    padding: 19px;
+    background-color: white;
+    float: left;
+    width: 250px;
+}
+nav#hospiital{
+    justify-content: space-around !;
+}
+nav a:hover{
+    color: black;
+}
+nav a:active{
+    color: black;
+}
+.welcome{
+    text-align: center;
+}
+.background1{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.welcome{
+    text-align: center;
+}
+.appointment{
+    position: relative;
+    text-align: center;
+    color: rgb(38, 122, 218);
+    border: 5px solid black;
+}
+.app1{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+.app2{
+    position: absolute;
+    top: 35px;
+    text-align: left;
+}
+.img{
+    opacity: 0.5;
+}
+
+    .table {
+        position: absolute;
+        top: 30px;
+        width: 20%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: rgb(190, 234, 253);
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+    .Work{
+        width: 90px;
+    }
+    footer a{
+        text-decoration: none;
+        list-style-position: inside;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px;
+        float: left;
+    }
+    footer{
+        background-color:rgb(99, 157, 224) ;
+        overflow: hidden;
+    }
+    footer a:hover{
+        color: black;
+    }
+    footer a:active{
+        color: black;
+    }
+    .ortho{
+        border: 3px solid black;
+
+    }
+    .doctor1{
+        margin: 3px;
+        border-radius: 5px;
+        padding: 3px;
+        float: left;
+        background-color: rgb(163, 200, 231);
+    }
