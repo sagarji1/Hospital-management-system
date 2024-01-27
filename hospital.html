@@ -26,6 +26,10 @@
             <a href="https://www.google.com/maps?q=28.532106783303636, 77.27049049056758," target="_blank">LOCATION</a>
             <a href='Sign up.html' name="Sign up">SIGN UP</a>
             <a href="donation.html">DONATION</a>
+            <section>
+                <a href="index.html"><button id="myButton" > <img src="ambulance.png" alt="" height=20px id="amb" >S O S</button></a>
+            </section>
+            <script src="button.js"></script>
         </div>
     </nav>
     <br>
@@ -35,16 +39,21 @@
     <br>
     <main>
         <section class="background1">
-            <img src="background1.png" alt="" height="80%" width="80%">
+            <img src="background1.png" alt="" height="100%" width="100%">
         </section>
         <br>
         <section class="welcome">
             <h2>"WELCOME TO <h2 style="color: crimson;">SAGAR HOSPITAL"</h2></h2></h2>
+            <br>
             <p>"In the heart of healing, where compassion meets expertise, Sagar Hospital shines as a beacon of hope and strength, lighting the path to wellness with unwavering dedication and care."
             </p>
         </section>
         <br>
-        <h2>About Our Doctors</h2>
+        <hr>
+        <br>
+        <h2 style="color: red; margin-left: 650px;">About Our Doctors</h2>
+        <br>
+        <div style="margin-left: 450px;">
         <div class="div1">
             <a href="Cardiologists.html" name="Cardiologists" id="doctors">Cardiologists</a>
             <a href="Orthopedic.html" name="Orthopedic" id="doctors">Orthopedic</a>
@@ -55,31 +64,34 @@
             <a href="Endocrinologists.html" name="Endocrinologists" id="doctors">Endocrinologists</a>
             <a href="Nephrologists.html" name="Nephrologists" id="doctors">Nephrologists</a>
         </div>
+    </div>
+    <br>
         <br>
-        
-        <h2>OUR SPECIALTIES</h2>
+        <hr>
+        <br>
+        <h2 class="h2" style="color: red;">OUR SPECIALTIES</h2>
         </section>
         <section class="specialties">
 
-            <a href="# ">Emergency Medicine</a>
+            <a href="# " style="margin-left: 20px;">Emergency Medicine</a>
             <br>
             <p>A hospital must have a well-equipped emergency department capable of handling various medical
                 emergencies, such as trauma cases, heart attacks, strokes, and other critical conditions.</p>
         </section>
         <section class="specialties">
-            <a href="# ">Intensive Care Unit (ICU)</a>
+            <a href="# " style="margin-left: 20px;">Intensive Care Unit (ICU)</a>
             <br>
             <p>Critical care services for patients with severe and life-threatening conditions, requiring continuous
                 monitoring and specialized interventions.</p>
         </section>
         <section class="specialties">
-            <a href="# ">Cardiology</a>
+            <a href="# " style="margin-left: 20px;">Cardiology</a>
             <br>
             <p>Diagnosis and treatment of heart-related conditions, including cardiac surgery and interventional
                 cardiology procedures.</p>
         </section>
         <section class="specialties">
-            <a href="# ">Neurology</a>
+            <a href="# " style="margin-left: 20px;">Neurology</a>
             <br>
             <p>Specialized care for disorders of the nervous system, including neurological examinations, diagnostics,
                 and treatment for conditions such as stroke, epilepsy, and neurodegenerative diseases.</p>
@@ -87,9 +99,10 @@
         <br>
         <br>
         <div class="appointment">
+            <hr>
             <div><img src="doctor.png" alt="" width="100%" height="500px" class="img"></div>
             <div>
-                <form action="connect.php" method="post">
+                <form href="than.html">
                     <table class="table">
                         <tr>
                             <th colspan="2"><h2>Book an Appointment</h2></th>
@@ -117,7 +130,7 @@
                                 <textarea id="about" name="about" required></textarea></td>
                         </tr>
                         <tr>
-                            <td colspan="2"><input type="submit" value="SUBMIT"></input></td>
+                            <td colspan="2" class="button"><a href="than.html"></a><input type="button"  value="SUBMIT"></input></td>"
                         </tr>
                     </table>
                 </form>
