@@ -1,4 +1,4 @@
-# Theme: HEALTH
+# Theme: Hospital
 
 We have designed a website on Hospital management system
 
